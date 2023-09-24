@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="textTospeech.css">
+    
+</head>
+<body class="body">
+    <div class="main">
+        <!--NAVBAR-->
+        <div class="navbar">
+
+            <img src="./images/logo-light.png" alt="">
+
+            <div class="button button-1">Contact us</div>
+        </div>
+
+        <!--TEXT SECTION-->
+        <div class="text-section">
+            <div class="white-bg">
+                <div class="btn-text">
+                    <div>
+                        <button class="undo-btn" onclick="undobtn()"><img src="./images/icons8-undo-30.png" alt=""></button>
+                        <button class="undo-btn" onclick="redobtn()"><img src="./images/icons8-redo-30.png" alt=""></button>
+                    </div>
+                    <div>
+                        <button class="text-btn" onclick="text()">Text</button>
+                    </div>
+                </div>
+
+
+                <div>
+                    <textarea onclick="textarea()" id="text-area" class="write-text"  type="text" maxlength="" placeholder="Text here..."></textarea>
+                </div>
+                
+                <div class="button-area2">
+                    <div class="left-side-btn ">
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn gry-btn text-btn">Speed</button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="">1x</a>
+                              <a href="">1.5x</a>
+                              <a href="">2x</a>
+                            </div>
+                          </div>
+                        <div><button class="gry-btn text-btn">Volume</button></div>
+                        <div><button class="gry-btn text-btn">Voices</button></div>
+                    </div>
+
+                    <div class="right-side-btn ">
+                        <button onclick="converttospeech()" class="text-btn cts">Convert to Speech</button>
+                        <div><button class="text-btn cts">Download MP3</button></div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+        <!--CONTACT US SECTION-->
+
+        <div class="contact-us">
+
+            <div class="form-border">
+                <div class="form">
+                    <div class="contact-us-heading">
+                        CONTACT US 
+                        <div class="contact-us-div"></div>
+                    </div>
+
+                    <div class="input-form">
+                        <div>
+                            <input class="form-input" type="text" id="fullName" placeholder="Full Name">
+                        </div>
+                    
+                        <div>
+                            <input class="form-input" type="email" id="email" placeholder="Email ID">
+                        </div>
+                    
+                        <div>
+                            <input class="form-input" type="tel" id="contactNumber" placeholder="Contact Number">
+                        </div>
+                    </div>
+                    
+                    <button class="text-btn cts submit-button" id="submitButton">Submit</button>
+                    
+                    
+                    
+                </div>
+    
+            </div>
+        </div>
+
+
+        <!--FOOTER-->
+        <div class="footer">
+            <div class="footer-div">
+                <div class="footer-text">
+                    © Copyright 2022, All Rights Reserved
+                </div>
+                <div>
+                    <div>
+                        <a class="footer-text" href="https://vyzasolutions.com/about.html">About</a>
+                        <a class="footer-text" href="https://vyzasolutions.com/careers.html">Careers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>   
+    
+    <script  src="texttospeach.js"></script>
+</body>
+</html>

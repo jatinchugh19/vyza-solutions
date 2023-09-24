@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.main{
+    overflow-x: hidden;
+    max-width: fit-content;
+    margin: auto;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.body{
+    margin:0px;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    gap: 920px;
+    cursor: pointer;
+    position:static;
+}
+
+.button {
+    width: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+
+.button-1 {
+    background-color: #2d3384;
+    border: 3px solid #2d3384;
+    color: white;
+    transition: .1s;
+    border-radius: 12px;
+  }
+.button-1:hover {
+    animation: button 100s;
+    transition: 1s;
+}
+
+@keyframes button {
+    0% {
+      transform: scale(1);
+    }
+    1%{
+        transform: scale(.9);}
+    100% {
+        transform: scale(.9);
+    }
+
+}
+
+.text-section{
+    background-image: url(./images//mic\ image.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.white-bg{
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 1px rgb(151, 151, 151) ;
+    align-items: center;
+    transform: translate(0,15%);
+    flex-direction: column;display: flex;
+} 
+
+.btn-text{
+    display: flex;
+    transform: translate(-430px,20px);
+    gap: 15px;mar
+}
+
+.undo-btn{
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    gap: 5px;
+}
+
+.text-btn{
+    transition: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100px;
+    font-weight: 600;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #2d3384;
+    border: 3px solid #2d3384;
+    color: white;
+    border-radius: 12px;
+    
+}
+
+.text-btn:hover{
+    background-color:#0a1063 ;
+}
+
+.write-text{
+    transform: translate(-0px,20px);
+    width: 75vw;
+    height: 50vh;
+    margin-top: 12px;
+    object-fit: cover;
+    overflow-y: hidden;
+}
+.button-area2{
+    display: flex;
+    flex-direction: row;
+    gap: 330px;
+}
+
+.left-side-btn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    gap: 10px;
+}
+
+.right-side-btn{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.cts{
+    width: 180px;
+    height: 50px;
+}
+
+.gry-btn{
+    background-color: rgb(112, 109, 109);
+    border:rgb(65, 63, 63);
+    height: 30px;
+}
+
+.dropbtn {
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(51, 51, 51, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+
+  .contact-us{
+    background-image: url(./images/White-Background-PNG-File.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-color: #2d3384;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contact-us-div{
+    margin: 1px;
+    height: 2px;
+    background-color: #2d3384;
+  }
+
+  .form-border{
+    border: 1px solid black ;
+    margin: 50px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px 1px rgb(74, 75, 77) ;
+    background-color: white;
+    
+  }
+
+  .form{
+     margin: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .contact-us-heading{
+    color: #2d3384;
+    font-size: xx-large;
+    font-weight: 500;
+  }
+
+  .form-input{
+    height: 35px;
+    width: 200px;
+    border-radius: 8px;
+    background-color: #e6e7f0;
+    border-color: rgb(138, 138, 138);
+  }
+
+  .submit-button{
+    width: 150px;
+  }
+
+  .input-form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer{
+    margin-top: 1px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+  }
+
+  .footer-div{
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 750px;
+  }
+
+  .footer-text{
+    color: #2d3384;
+    font-size: larger;
+    margin: 10px;
+    font-weight: 400;
+  }
