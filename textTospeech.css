@@ -22,9 +22,11 @@
     display: flex;
     flex-direction: row;
     margin: 20px;
-    gap: 920px;
-    cursor: pointer;
-    position:static;
+    justify-content: space-between;
+}
+
+.navbar{
+  cursor: pointer;
 }
 
 .button {
@@ -130,14 +132,15 @@
 .button-area2{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     gap: 330px;
 }
 
 .left-side-btn {
-    display: flex;
-    flex-direction: row;
-    margin-top: 60px;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  gap: 10px;
 }
 
 .right-side-btn{
@@ -165,7 +168,6 @@
   }
 
   .dropdown {
-    position: relative;
     display: inline-block;
   }
   
@@ -174,6 +176,7 @@
     position: absolute;
     background-color: #f1f1f1;
     min-width: 100px;
+    text-align: center;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(51, 51, 51, 0.2);
     z-index: 1;
@@ -181,7 +184,6 @@
   
   .dropdown-content a {
     color: black;
-    padding: 8px 10px;
     text-decoration: none;
     display: block;
   }
@@ -191,7 +193,7 @@
   .show {display: block;}
 
 
-  .contact-us{
+  #contact-us{
     background-image: url(./images/White-Background-PNG-File.png);
     background-size: cover;
     height: 100vh;
@@ -252,21 +254,17 @@
   .footer{
     margin-top: 1px;
     background-color: white;
-    display: flex;
-    flex-direction: row;
-    gap: 200px;
   }
 
   .footer-div{
     margin: 25px;
     display: flex;
-    flex-direction: row;
-    gap: 750px;
+    justify-content: space-between;
+    
   }
 
   .footer-text{
     color: #2d3384;
     font-size: larger;
-    margin: 10px;
     font-weight: 400;
   }
